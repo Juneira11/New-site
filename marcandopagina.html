@@ -67,7 +67,7 @@
              .postagem{
                   width: 620px;
                   float: left;
-                  padding: 20px;
+                  padding: 5px;
              }
              .postagem-lateral{
                   width: 240px;
@@ -87,9 +87,22 @@
              span{
                   font-size: 0.8em;
              }
+             button{
+               padding: 3px;
+               background: rgb(14, 77, 201);
+               color: white;
+               border-radius: 5px;
+             }
+             button:hover{
+               color: rgb(14, 77, 201) ;
+               background: #fff;
+             }
       </style>
 </head>
 <body >
+
+     
+
       <div class="area-cabecalho">
           
             <div class="are-log">
@@ -102,12 +115,16 @@
                   <a href="">Eletrônicos</a>
                   <a href="">Informática</a>
             </div>
+     
       </div>
+      
+     <button onclick="evento1()">color: gray</button>
+     <button onclick="evento()">color: white</button>
       <div class="principal">
             <div class="postagem">
                   <h2>Título da postagem1</h2>
                   <span>05 de Novembro de 2024</span>
-                  <img src="/imagem.tec/imagem3.jpg" alt="">
+                  <img width="620px" src="/imagem.tec/imagem3.jpg" alt="">
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quis repellat facere fugiat quo tempore placeat iste doloremque neque. Facilis dolores nulla, doloremque sequi perferendis cupiditate assumenda aliquam veniam officia!</p>
                   <br>
                   <a href="">Leia mais</a>
@@ -115,7 +132,7 @@
                   <br>
                   <h2>Título da postagem2</h2>
                   <span>05 de Novembro de 2024</span>
-                  <img src="/imagem.tec/imagem4.jpg" alt="">
+                  <img width="620px" src="/imagem.tec/imagem4.jpg" alt="">
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quis repellat facere fugiat quo tempore placeat iste doloremque neque. Facilis dolores nulla, doloremque sequi perferendis cupiditate assumenda aliquam veniam officia!</p>
                  <br>
                   <a href="">Leia mais</a>
@@ -148,7 +165,17 @@
       </div>
       
     
-      
+      <script>
+          
+          function evento(){
+              document.body.style.backgroundColor="white";
+
+          }
+          function evento1(){
+              document.body.style.backgroundColor="gray";
+
+          }
+      </script>
 
       
 </body>
